@@ -1,9 +1,10 @@
 import './App.css';
+import Compteur from './components/Compteur';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="container">
+      <Compteur />
     </div>
   );
 }
