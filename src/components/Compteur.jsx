@@ -27,12 +27,13 @@ export default class Compteur extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='compteur'>
                 <Valeur val={this.state.compteur} />
-                <button onClick={this.incrementer}>incrementer</button>
-                <button onClick={this.decrementer}>decrementer</button>
-                <button onClick={this.initialiser} disabled={this.state.compteur===0}>initialiser</button>
-
+                <div className='actions'>
+                    <button onClick={this.incrementer}>incrementer</button>
+                    <button onClick={this.decrementer}>decrementer</button>
+                    <button onClick={this.initialiser} disabled={this.state.compteur===0}>initialiser</button>
+                </div>
                 <fieldset>
                     <legend>Pas d'incrementation</legend>
                     <button type="button" onClick={() => this.setState({pasi:1})} disabled={this.state.pasi===1}>1</button>

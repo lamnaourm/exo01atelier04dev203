@@ -1,0 +1,56 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  background-color: whitesmoke;
+}
+
+.compteur {
+  width: fit-content;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.compteur button{
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border: none;
+  font-size: 23px;
+}
+
+.compteur button:disabled{
+  opacity: 0.5;
+}
+
+fieldset {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+fieldset button {
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.actions button {
+  flex-grow: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+}
+
+
+
